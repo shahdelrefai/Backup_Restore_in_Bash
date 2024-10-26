@@ -1,20 +1,20 @@
-# backup_restore_in_bash
+# Backup Restore in Bash
 
 ## Overview
-This project implements a backup solution consisting of two main scripts: 
-* `backup.sh` for creating backups of a specified directory
-* `restore.sh` for restoring files from the backups.
+This project implements a backup/restore solution consistig of two main scripts: 
+* `backup.sh` for creating backups of a specified directory into a specified backup directory.
+* `restore.sh` for restoring previous versions of the directory from the backups.
 
 
 ### Folder Hierarchy
-    .Lab2/
+    .Backup Restore in Bash/
     ├── backup.sh                    # Script to create backups of a specified directory.
     ├── restore.sh                   # Script to restore files from backups.
     ├── Makefile                     # Makefile for running backup and restore
     └── README.md
 
 ## Backup
-The `backup.sh` script continuously monitors the specified directory for changes and creates a new backup if any changes are detected. It also maintains a maximum number of backups specified by `max_backups`. Both backup intervals and maximum backups are customizable.
+The `backup.sh` script continuously monitors the specified directory for changes and creates a new backup if any changes are detected after a specific interval of time specified by `interval_sec`. It also maintains a maximum number of backups specified by `max_backups`. Both backup interval and maximum backups are customizable.
 ## Restore
 The `restore.sh` script allows you to navigate through available backups and restore files to the original directory.
 ## Makefile
@@ -64,6 +64,13 @@ make backup
 ```
 make restore
 ```
+You will be promted with 3 options to choose from:
+```
+1: Restore to the previous version     # Restore to the directory version imediatily before your current version
+2: Restore to the next version         # Restore to the directory version imediatily after your current version
+3: Exit
+```
+
 
 
 
