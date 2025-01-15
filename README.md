@@ -44,9 +44,9 @@ exec bash
 
 ## Step-by-Step Instructions to Run the Project
 1. Clone or Download the Repository.
-2. Navigate to the Project Directory: Open a terminal and navigate to the Lab2 directory:
+2. Navigate to the Project Directory: Open a terminal and navigate to the directory:
 ```
-cd /path/to/Lab2
+cd /path/to/Backup_Restore_in_Bash
 ```
 3. Configure the Paths: Edit the Makefile to set the backupdir (backup destination) and dir (source directory) paths according to your preferences.
 ```
