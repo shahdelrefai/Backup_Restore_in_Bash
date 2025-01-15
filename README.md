@@ -52,8 +52,8 @@ cd /path/to/Backup_Restore_in_Bash
 ```
 backupdir := /path/to/backup
 dir := /path/to/source
-interval_sec := 60
-max_backups := 5
+interval_sec := 60                   # Backups every (interval_sec) seconds
+max_backups := 5                     # Creates maximum of (max_backups) after that it starts deleting the oldest to add more
 ```
 4. Run the Backup Script: Use the following command to create the backup:
 ```
