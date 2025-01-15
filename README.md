@@ -1,7 +1,7 @@
 # Backup Restore in Bash
 
 ## Overview
-This project implements a backup/restore solution consistig of two main scripts: 
+This project implements a backup/restore solution consisting of two main scripts: 
 * `backup.sh` for creating backups of a specified directory into a specified backup directory.
 * `restore.sh` for restoring previous versions of the directory from the backups.
 
